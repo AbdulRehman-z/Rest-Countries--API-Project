@@ -1,0 +1,40 @@
+:root {
+  //////////////////////////////
+  //////Dark Mode Variables
+  --color-dark-blue: hsl(209, 23%, 22%); //Dark mode elements color
+  --color-dark-blue-2: hsl(207, 26%, 17%); //Dark mode background
+  --color-text-dark-mode: hsl(0, 0%, 100%); //Dark mode text color
+
+  //Light Mode Variables
+  --color-gray-dark-input: hsl(0, 0%, 65%); // Light mode input
+  --color-light-gray: hsl(0, 0%, 97%); //Light mode background
+  --color-text-light-mode: hsl(200, 15%, 8%); //Light mode text color
+  --color-white: hsl(0, 0%, 100%); //Light mode elements color
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--color-light-gray);
+  line-height: 1.5;
+  // padding: 2rem;
+}
+
+.countries-container {
+  margin: 3rem 7rem;
+  padding: 0.4rem 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // justify-content: center;
+  flex-wrap: wrap;
+}

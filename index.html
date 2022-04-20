@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <!-- Navbar -->
+      <nav class="nav-bar mode shadow">
+        <h3 class="nav-bar__heading mode-color">Where in the world?</h3>
+        <button class="nav-bar__btn-dark-mode mode">
+          <svg class="nav-bar__icon mode-color svg">
+            <use xlink:href="svg/sprite.svg#icon-moon"></use></svg
+          ><span class="nav-bar__text mode-color">Dark Mode</span>
+        </button>
+      </nav>
+
+      <!-- Country Info -->
+      <div class="detail-container">
+        <!-- <button class="btn-back">
+        <svg class="btn-back__icon">
+          <use xlink:href="svg/sprite.svg#icon-arrow-long-left"></use></svg
+        ><span class="btn-back__text mode-color">Back</span>
+          </button>
+
+       <section class="sub-container">
+        <div class="sub-container__col-1">
+          <figure class="sub-container__img-box">
+            <img src="" alt="" class="sub-container__img" />
+          </figure>
+        </div>
+
+        <div class="sub-container__col-2">
+          <article class="sub-container__text-content">
+            <h3 class="sub-container__heading mode-color">Germany</h3>
+            <div class="sub-container__info">
+              <div class="sub-container__block-1">
+                <p class="sub-container__text mode-color">
+                  Native Name:<span class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+                <p class="sub-container__text">
+                  Population:<span
+                    class="sub-container__span mode-input-color"
+                  ></span>
+                </p>
+                <p class="sub-container__text">
+                  Region:<span
+                    class="sub-container__span mode-input-color"
+                  ></span>
+                </p>
+                <p class="sub-container__text mode-color">
+                  Native Name:<span class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+                <p class="sub-container__text mode-color">
+                  Native Name:<span class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+              </div>
+              <div class="sub-container__block-2">
+                <p class="sub-container__text mode-color">
+                  Top Level Domain:<span
+                    class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+                <p class="sub-container__text mode-color">
+                  Currencies:<span class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+                <p class="sub-container__text mode-color">
+                  Languages:<span class="sub-container__span mode-input-color"
+                    >2adoakodkaos</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="sub-container__block-3">
+              <h4 class="sub-container__text sub-container__text--1 mode-color">
+                Border Countries:
+              </h4>
+
+              <button class="sub-container__btn-back">
+                <span class="mode-color">France</span>
+              </button>
+
+              <button class="sub-container__btn-back">
+                <span class="mode-color">France</span>
+              </button>
+
+              <button class="sub-container__btn-back">
+                <span class="mode-color">France</span>
+              </button>
+            </div>
+          </article>
+        </div>
+       </section> -->
+      </div>
+
+      <!-- Searchbar -->
+      <div class="top-level-container">
+        <div class="container-2">
+          <form class="form shadow">
+            <button class="form__search-btn mode">
+              <svg class="form__icon form__icon--btn mode-color svg">
+                <use xlink:href="svg/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+
+            <input
+              type="text"
+              class="form__input mode mode-color mode-input-color"
+              placeholder="Search for a country..."
+            />
+          </form>
+
+          <div class="dropdown shadow">
+            <ul class="dropdown__content dropdown--hidden mode shadow">
+              <li class="dropdown__list">
+                <a href="#" class="dropdown__link mode-color">Asia</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="#" class="dropdown__link mode-color">Americas</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="#" class="dropdown__link mode-color">Europe</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="#" class="dropdown__link mode-color">Africa</a>
+              </li>
+              <li class="dropdown__list">
+                <a href="#" class="dropdown__link mode-color">Oceania</a>
+              </li>
+            </ul>
+
+            <button class="dropdown__drop-btn mode mode-color">
+              Filter by Region
+              <svg class="dropdown__icon mode-color svg">
+                <use xlink:href="svg/sprite.svg#icon-chevron-small-down"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Render countries -->
+        <main class="countries-container">
+          <!-- <article class="country">
+          <img class="country__img" src="" />
+          <div class="country__data">
+            <h3 class="country__name">COUNTRY Name</h3>
+            <div class="country__row-box">
+              <p class="country__row">
+                Population:<span class="country__row--span">2adoakodkaos</span>
+              </p>
+              <p class="country__row">
+                Region:<span class="country__row--span"></span>
+              </p>
+              <p class="country__row">
+                Capital:<span class="country__row--span"></span>
+              </p>
+            </div>
+          </div>
+        </article> -->
+        </main>
+      </div>
+    </section>
+  </body>
+</html>
